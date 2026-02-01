@@ -28,6 +28,12 @@
   background-size: cover;
 }
 
+.content-image{
+  background-image: url("/assets/Image.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* --------------- FONTS --------------- */
 .secondary-font{
   font-family: "Source Serif 4", serif;
