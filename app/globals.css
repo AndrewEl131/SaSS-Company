@@ -34,6 +34,12 @@
   background-size: cover;
 }
 
+.values-bg{
+  background-image: url("/assets/Values-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* --------------- FONTS --------------- */
 .secondary-font{
   font-family: "Source Serif 4", serif;

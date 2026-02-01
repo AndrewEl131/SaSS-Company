@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FeaturesMenu from "./HomeComponents/FeaturesMenu";
+import ValueContainer from "./HomeComponents/ValueContainer";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
           <h1 className="w-153 h-20 text-[40px] text-center font-medium primary-font leading-10">
             Everything you need to measure, model, and act on sustainability
           </h1>
-          <div className="w-full h-125.5 flex justify-center gap-10 pr-10">
+          <div className="w-full h-125.5 flex justify-center gap-10 pr-5">
             <div className="w-173.25 h-full content-image"></div>
             <div className="w-190 h-full border-t border-gray-300 ">
               <FeaturesMenu
@@ -78,6 +79,32 @@ export default function Home() {
                 <h1>Explore features</h1>
               </button>
             </div>
+          </div>
+        </div>
+        {/* -------- Values Section -------- */}
+        <div className="w-full h-169.5 space-y-10 px-5 py-30 values-bg">
+          <div className="w-full h-38 flex flex-col text-center leading-20.5">
+            <h1 className="secondary-font font-normal text-[80px]">
+              Built for clarity
+            </h1>
+            <h1 className="primary-font text-[80px]">Designed for action</h1>
+          </div>
+          <div className="w-full h-61.5 flex justify-center gap-4">
+            <ValueContainer
+              icon="/icons/Value.png"
+              title="Clarity drives action"
+              text="We believe better decisions start with better data—measured, visible, and trusted."
+            />
+            <ValueContainer
+              icon="/icons/Value2.png"
+              title="Sustainability is a systems problem"
+              text="We build tools that help teams connect the dots between operations, impact, and accountability."
+            />
+            <ValueContainer
+              icon="/icons/Value3.png"
+              title="Progress over perfection"
+              text="We support real-world momentum—helping organizations move from ambition to measurable change."
+            />
           </div>
         </div>
       </div>
