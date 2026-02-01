@@ -107,6 +107,34 @@ export default function Home() {
             />
           </div>
         </div>
+        {/* --------- Case Study Section --------- */}
+        <div className="w-full h-140 flex justify-center items-center">
+          <div className="w-245 h-80 bg-[#F6F8FB] flex gap-10 rounded-2xl py-5 px-5">
+            <Image
+              src={"/assets/CaseImage.png"}
+              width={498}
+              height={280}
+              alt="image"
+            />
+            <div className="w-full h-56.5">
+              <div className="text-[20px] space-y-4">
+                <h1 className="primary-font">Why Acme Inc chose Aetherfield</h1>
+                <p className="secondary-font leading-[120%] tracking-[-4%]">
+                  With fragmented data and growing reporting pressure, Acme
+                  turned to Aetherfield to streamline their ESG workflows. The
+                  result? Faster decisions, fewer spreadsheets, and 34% more
+                  coverage.
+                </p>
+              </div>
+              <button
+                className="px-2 py-2 w-37 h-9.5 mt-6 font-semibold bg-black text-white text-[14.5px] flex items-center justify-center"
+                style={{ wordSpacing: "6px" }}
+              >
+                <h1>Read case study</h1>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
