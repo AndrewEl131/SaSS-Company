@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FeaturesMenu from "./HomeComponents/FeaturesMenu";
 import ValueContainer from "./HomeComponents/ValueContainer";
+import BlogMenu from "./HomeComponents/BlogMenu";
 
 export default function Home() {
   return (
@@ -133,6 +134,44 @@ export default function Home() {
                 <h1>Read case study</h1>
               </button>
             </div>
+          </div>
+        </div>
+        {/* Blog Section */}
+        <div className="w-full h-142 flex flex-col items-center gap-10 px-5">
+          <h1 className="w-153 h-10 text-[40px] text-center primary-font">
+            From the journal
+          </h1>
+
+          <div className="w-155 h-126.5">
+            <div className="w-full h-111 border-y border-gray-300">
+              <BlogMenu
+                image="/assets/blog.png"
+                title="How to Build a Climate-Ready Data Stack"
+                insights={true}
+                min="4"
+                borders={false}
+              />
+              <BlogMenu
+                image="/assets/blog1.png"
+                title="Sustainability Isn’t a Side Project: Making Impact Operational"
+                insights={false}
+                min="7"
+                borders={true}
+              />
+              <BlogMenu
+                image="/assets/blog2.png"
+                title="Inside the Aetherfield Model: How We Turn Data Into Action"
+                insights={true}
+                min="5"
+                borders={false}
+              />
+            </div>
+            <button
+                className="px-4 py-4 w-42 h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
+                style={{ wordSpacing: "6px" }}
+              >
+                View all articles
+              </button>
           </div>
         </div>
       </div>
