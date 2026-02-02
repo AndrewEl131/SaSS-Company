@@ -2,6 +2,7 @@ import Image from "next/image";
 import FeaturesMenu from "./HomeComponents/FeaturesMenu";
 import ValueContainer from "./HomeComponents/ValueContainer";
 import BlogMenu from "./HomeComponents/BlogMenu";
+import Badge from "@/Components/Branch";
 
 export default function Home() {
   return (
@@ -137,10 +138,12 @@ export default function Home() {
           </div>
         </div>
         {/* Blog Section */}
-        <div className="w-full h-142 flex flex-col items-center gap-10 px-5">
+        <div className="w-full h-142 flex flex-col items-center gap-10 px-5 relative">
           <h1 className="w-153 h-10 text-[40px] text-center primary-font">
             From the journal
           </h1>
+
+          <Badge />
 
           <div className="w-155 h-126.5">
             <div className="w-full h-111 border-y border-gray-300">

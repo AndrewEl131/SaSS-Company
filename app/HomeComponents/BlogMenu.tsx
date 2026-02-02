@@ -11,7 +11,7 @@ type BlogProps = {
 
 export default function BlogMenu({ image, title, insights, min, borders }: BlogProps) {
   return (
-    <div className={`w-full h-37 flex gap-4 py-5 ${borders ? "border-t border-b border-gray-300" : ""}`}>
+    <div className={`w-full h-37 flex gap-4 py-5 hover:ml-5 hover:text-gray-600 transition-colors duration-700 ${borders ? "border-t border-b border-gray-300" : ""}`}>
       <Image
         src={image}
         width={165}
