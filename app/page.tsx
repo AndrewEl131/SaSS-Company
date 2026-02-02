@@ -177,6 +177,20 @@ export default function Home() {
               </button>
           </div>
         </div>
+        {/* Testimonial Section */}
+        <div className="w-full h-235 px-5 py-30">
+          <div className="w-full h-175 flex justify-center gap-4">
+            <div className="w-153 h-175 man-image"></div>
+            <div className="w-153 h-96 px-26.5 my-auto space-y-12">
+              <Image src={"/icons/quote-left.svg"} width={30} height={30} alt="quote" />
+              <h1 className="primary-font font-medium text-[40px] leading-[100%] tracking-[-3%] w-145 h-50">We finally moved past spreadsheets and guesswork. Now we have real data to guide real decisions.</h1>
+              <div className="w-100.5 h-13 space-y-1 text-[20px]">
+                <h1 className="primary-font">Elliot Williams</h1>
+                <h1 className="secondary-font text-gray-400">Head of Sustainability, Flux Materials</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
