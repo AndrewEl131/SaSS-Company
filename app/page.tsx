@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <div className="w-full min-h-484 flex flex-col">
         {/* --------- Intro Section --------- */}
-        <div className="w-full h-[1074px] gradient-bg relative">
+        <div className="w-full h-268.5 gradient-bg relative">
           <div className="mt-25 flex flex-col gap-10">
             <div>
               <h1 className="text-7xl text-center flex flex-col secondary-font">
@@ -41,11 +41,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-[960px] h-[608px] absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image"></div>
+          <div className="w-240 h-152 absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image"></div>
         </div>
 
         {/* --------- Features Section --------- */}
-        <div className="w-full h-[862px] flex flex-col items-center gap-10 py-30">
+        <div className="w-full h-215.5 flex flex-col items-center gap-10 py-30">
           <h1 className="w-153 h-20 text-[40px] text-center font-medium primary-font leading-10">
             Everything you need to measure, model, and act on sustainability
           </h1>
@@ -170,11 +170,11 @@ export default function Home() {
               />
             </div>
             <button
-                className="px-4 py-4 w-42 h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
-                style={{ wordSpacing: "6px" }}
-              >
-                View all articles
-              </button>
+              className="px-4 py-4 w-42 h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
+              style={{ wordSpacing: "6px" }}
+            >
+              View all articles
+            </button>
           </div>
         </div>
         {/* Testimonial Section */}
@@ -182,14 +182,35 @@ export default function Home() {
           <div className="w-full h-175 flex justify-center gap-4">
             <div className="w-153 h-175 man-image"></div>
             <div className="w-153 h-96 px-26.5 my-auto space-y-12">
-              <Image src={"/icons/quote-left.svg"} width={30} height={30} alt="quote" />
-              <h1 className="primary-font font-medium text-[40px] leading-[100%] tracking-[-3%] w-145 h-50">We finally moved past spreadsheets and guesswork. Now we have real data to guide real decisions.</h1>
+              <Image
+                src={"/icons/quote-left.svg"}
+                width={30}
+                height={30}
+                alt="quote"
+              />
+              <h1 className="primary-font font-medium text-[40px] leading-[100%] tracking-[-3%] w-145 h-50">
+                We finally moved past spreadsheets and guesswork. Now we have
+                real data to guide real decisions.
+              </h1>
               <div className="w-100.5 h-13 space-y-1 text-[20px]">
                 <h1 className="primary-font">Elliot Williams</h1>
-                <h1 className="secondary-font text-gray-400">Head of Sustainability, Flux Materials</h1>
+                <h1 className="secondary-font text-gray-400">
+                  Head of Sustainability, Flux Materials
+                </h1>
               </div>
             </div>
           </div>
+        </div>
+        {/* Call to action */}
+        <div className="w-full h-89.5 px-5 py-30 space-y-8 bg-[#F6F8FB]">
+          <h1 className="primary-font text-center text-[40px] leading-[100%] tracking-[-3%] font-medium">
+            Ready to operationalize your sustainability goals?
+          </h1>
+          <button
+            className="px-4 py-4 w-41 h-11.5 mt-6 font-semibold bg-black text-white flex items-center gap-2.5 m-auto">
+            <div className="w-1 h-1 bg-white"></div>
+            <h1>Request a demo</h1>
+          </button>
         </div>
       </div>
     </main>
