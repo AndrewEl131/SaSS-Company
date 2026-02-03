@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/Components/Header";
 import { Radio_Canada_Big, Source_Serif_4 } from "next/font/google";
+import Footer from "@/Components/Footer";
 
 const radioCanada = Radio_Canada_Big({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

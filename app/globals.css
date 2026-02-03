@@ -1,10 +1,8 @@
-
-
-:root{
+:root {
   background-color: #fff;
 }
 
-.default-text{
+.default-text {
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -12,48 +10,73 @@
   transition: 200ms ease-in;
 }
 
-.default-text:hover{
+.default-text:hover {
   color: #333030;
 }
 
-.gradient-bg{
-  background-image: url("/assets/Gradient_background.png"); 
+.footer-link {
+  color: #66640f;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  letter-spacing: -3%;
+  cursor: pointer;
+  line-height: 100%;
+  font-weight: 500;
+  transition: 300ms;
+}
+
+.footer-link:hover{
+  color: #5f5e10d7;
+}
+
+.copyright {
+  color: #66640f;
+  font-family: "Source Serif 4", serif;
+  font-size: 20px;
+}
+
+.gradient-bg {
+  background-image: url("/assets/Gradient_background.png");
   background-repeat: no-repeat;
   background-size: 100% 808px;
 }
 
-.hero-image{
-  background-image: url("/assets/Hero image.png"); 
+.hero-image {
+  background-image: url("/assets/Hero image.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.content-image{
-  background-image: url("/assets/Image.png"); 
+.content-image {
+  background-image: url("/assets/Image.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.values-bg{
+.values-bg {
   background-image: url("/assets/Values-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.man-image{
+.man-image {
   background-image: url("/assets/man.png");
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
+.footer-bg {
+  background-image: url("/assets/footer-bg.png");
+  background-blend-mode: multiply;
+  background-color: #FFF546;
+}
+
 /* --------------- FONTS --------------- */
-.secondary-font{
+.secondary-font {
   font-family: "Source Serif 4", serif;
 }
-.primary-font{
+.primary-font {
   font-family: "Radio Canada Big", sans-serif;
 }
-
-
 
 @import "tailwindcss";
