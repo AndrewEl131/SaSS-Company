@@ -11,7 +11,7 @@ export default function Badge() {
     <Draggable nodeRef={nodeRef}>
       <div
         ref={nodeRef}
-        className="cursor-grab active:cursor-grabbing absolute transform -translate-x-[100%]  "
+        className="cursor-grab active:cursor-grabbing absolute transform -translate-x-full md:block hidden "
       >
         <Image
           src="/icons/Sticker.png"

@@ -7,23 +7,23 @@ import Badge from "@/Components/Branch";
 export default function Home() {
   return (
     <main>
-      <div className="w-full min-h-484 flex flex-col">
+      <div className="w-full md:min-h-484 min-h-1371.25 flex flex-col">
         {/* --------- Intro Section --------- */}
-        <div className="w-full h-268.5 gradient-bg relative">
-          <div className="mt-25 flex flex-col gap-10">
+        <div className="w-full md:h-268.5 h-160.5 gradient-bg relative sm:flex sm:flex-col">
+          <div className="md:mt-25 mt-18 flex flex-col md:gap-10 gap-8">
             <div>
-              <h1 className="text-7xl text-center flex flex-col secondary-font">
+              <h1 className="md:text-7xl text-3xl text-center flex flex-col secondary-font">
                 Sustainability insights,{" "}
                 <span className="primary-font">built for business</span>
               </h1>
             </div>
             <div>
-              <p className="text-[19px] text-center">
+              <p className="md:text-[19px] text-center">
                 Track impact, reduce emissions, and accelerate progress—with
                 clarity and confidence.
               </p>
             </div>
-            <div className="flex justify-center gap-5">
+            <div className="flex justify-center md:flex-row flex-col md:items-start items-center gap-5">
               <button
                 className="px-4 py-4 w-45 h-11.5 font-semibold bg-black text-white flex items-center gap-2"
                 style={{ wordSpacing: "6px" }}
@@ -41,17 +41,18 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-240 h-152 absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image"></div>
+          <div className="lg:w-240 lg:h-152 w-83.75 h-53 absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image"></div>
         </div>
 
         {/* --------- Features Section --------- */}
-        <div className="w-full h-215.5 flex flex-col items-center gap-10 py-30">
-          <h1 className="w-153 h-20 text-[40px] text-center font-medium primary-font leading-10">
+        <div className="w-full md:h-215.5 h-230 flex flex-col items-center md:gap-10 gap-6 md:py-30 py-10">
+          <h1 className="md:w-153 h-20 md:text-[40px] text-[23px] text-center font-medium primary-font leading-10">
             Everything you need to measure, model, and act on sustainability
           </h1>
-          <div className="w-full h-125.5 flex justify-center gap-10 pr-5">
-            <div className="w-173.25 h-full content-image"></div>
-            <div className="w-190 h-full border-t border-gray-300 ">
+          <div className="w-full md:h-125.5 h-175 flex md:justify-center md:flex-row flex-col md:px-0 px-5 md:gap-10 gap-6 md:pr-5">
+            <div className="md:w-173.25 w-83 md:h-full h-auto min-h-51 content-image"></div>
+            
+            <div className="md:w-190 h-full border-t  border-gray-300">
               <FeaturesMenu
                 title="Track"
                 number="001"
@@ -74,7 +75,7 @@ export default function Home() {
               />
 
               <button
-                className="px-4 py-4 w-42 h-11.5 mt-6 font-semibold bg-black text-white flex items-center gap-2"
+                className="px-4 py-4 md:w-45 w-full h-11.5 mt-6 font-semibold bg-black text-white flex items-center md:justify-start justify-center gap-2 secondary-font"
                 style={{ wordSpacing: "6px" }}
               >
                 <div className="w-1 h-1 bg-white"></div>
@@ -84,14 +85,14 @@ export default function Home() {
           </div>
         </div>
         {/* -------- Values Section -------- */}
-        <div className="w-full h-169.5 space-y-10 px-5 py-30 values-bg">
-          <div className="w-full h-38 flex flex-col text-center leading-20.5">
-            <h1 className="secondary-font font-normal text-[80px]">
+        <div className="w-full md:h-169.5 h-261.5 md:space-y-10 space-y-8 px-5 md:py-30 py-10 values-bg">
+          <div className="w-full md:h-38 h-18 flex flex-col text-center md:leading-20.5">
+            <h1 className="secondary-font font-normal md:text-[80px] text-[36px]">
               Built for clarity
             </h1>
-            <h1 className="primary-font text-[80px]">Designed for action</h1>
+            <h1 className="primary-font md:text-[80px] text-[36px]">Designed for action</h1>
           </div>
-          <div className="w-full h-61.5 flex justify-center gap-4">
+          <div className="w-full md:h-61.5 h-215.5 flex md:justify-center md:flex-row flex-col gap-4">
             <ValueContainer
               icon="/icons/Value.png"
               title="Clarity drives action"
@@ -111,15 +112,16 @@ export default function Home() {
         </div>
         {/* --------- Case Study Section --------- */}
         <div className="w-full h-140 flex justify-center items-center">
-          <div className="w-245 h-80 bg-[#F6F8FB] flex gap-10 rounded-2xl py-5 px-5">
+          <div className="w-245 md:h-80 h-113.5 bg-[#F6F8FB] flex md:flex-row flex-col gap-10 rounded-2xl py-5 px-5">
             <Image
               src={"/assets/CaseImage.png"}
               width={498}
               height={280}
               alt="image"
+              className="md:h-70 h-41.25"
             />
             <div className="w-full h-56.5">
-              <div className="text-[20px] space-y-4">
+              <div className="md:text-[20px] text-[18px] space-y-4">
                 <h1 className="primary-font">Why Acme Inc chose Aetherfield</h1>
                 <p className="secondary-font leading-[120%] tracking-[-4%]">
                   With fragmented data and growing reporting pressure, Acme
@@ -129,7 +131,7 @@ export default function Home() {
                 </p>
               </div>
               <button
-                className="px-2 py-2 w-37 h-9.5 mt-6 font-semibold bg-black text-white text-[14.5px] flex items-center justify-center"
+                className="px-2 py-2 md:w-37 w-full h-9.5 mt-6 font-semibold bg-black text-white text-[14.5px] flex items-center justify-center"
                 style={{ wordSpacing: "6px" }}
               >
                 <h1>Read case study</h1>
@@ -138,14 +140,14 @@ export default function Home() {
           </div>
         </div>
         {/* Blog Section */}
-        <div className="w-full h-142 flex flex-col items-center gap-10 px-5 relative">
-          <h1 className="w-153 h-10 text-[40px] text-center primary-font">
+        <div className="w-full md:h-142 h-133.25 flex flex-col items-center md:gap-10 gap-6 px-5 md:py-0 py-10 relative">
+          <h1 className="w-153 h-10 md:text-[40px] text-2xl text-center primary-font">
             From the journal
           </h1>
 
           <Badge />
 
-          <div className="w-155 h-126.5">
+          <div className="md:w-155 w-full h-126.5">
             <div className="w-full h-111 border-y border-gray-300">
               <BlogMenu
                 image="/assets/blog.png"
@@ -178,7 +180,7 @@ export default function Home() {
           </div>
         </div>
         {/* Testimonial Section */}
-        <div className="w-full h-235 px-5 py-30">
+        <div className="w-full md:h-235 h-266.75 px-5 md:py-30 py-10 md:space-y-0 space-y-4">
           <div className="w-full h-175 flex justify-center gap-4">
             <div className="w-153 h-175 man-image"></div>
             <div className="w-153 h-96 px-26.5 my-auto space-y-12">
@@ -202,7 +204,7 @@ export default function Home() {
           </div>
         </div>
         {/* Call to action */}
-        <div className="w-full h-89.5 px-5 py-30 space-y-8 bg-[#F6F8FB]">
+        <div className="w-full md:h-89.5 h-51.5 px-5 md:py-30 py-10 space-y-8  bg-[#F6F8FB]">
           <h1 className="primary-font text-center text-[40px] leading-[100%] tracking-[-3%] font-medium">
             Ready to operationalize your sustainability goals?
           </h1>
