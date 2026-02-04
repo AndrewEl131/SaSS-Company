@@ -26,7 +26,7 @@
   transition: 300ms;
 }
 
-.footer-link:hover{
+.footer-link:hover {
   color: #5f5e10d7;
 }
 
@@ -69,7 +69,7 @@
 .footer-bg {
   background-image: url("/assets/footer-bg.png");
   background-blend-mode: multiply;
-  background-color: #FFF546;
+  background-color: #fff546;
 }
 
 /* --------------- FONTS --------------- */
@@ -80,4 +80,9 @@
   font-family: "Radio Canada Big", sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .footer-link {
+    font-size: 16px;
+  }
+}
 @import "tailwindcss";

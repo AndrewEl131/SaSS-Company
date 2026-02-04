@@ -9,14 +9,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full h-15 flex justify-between items-center px-5">
+    <header className="fixed top-0 z-50 md:w-full min-w-83 h-15 flex justify-between items-center px-5">
       <div>
         <Link href={"/"}>
           <Image src={"/assets/Logo.png"} width={120} height={90} alt="logo" />
         </Link>
       </div>
 
-      <ul className="w-105 h-5 md:flex items-center gap-5 hidden">
+      <ul className="md:w-105 w-full h-5 md:flex items-center gap-5 hidden">
         <li className="w-14.5 h-5 default-text">Product</li>
         <li className="w-14.5 h-5 default-text">Journal</li>
         <li className="w-14.5 h-5 default-text">About</li>

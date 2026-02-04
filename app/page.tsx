@@ -7,7 +7,7 @@ import Badge from "@/Components/Branch";
 export default function Home() {
   return (
     <main>
-      <div className="w-full md:min-h-484 min-h-1371.25 flex flex-col">
+      <div className="w-full md:min-h-484 min-h-1371 h-auto flex flex-col">
         {/* --------- Intro Section --------- */}
         <div className="w-full md:h-268.5 h-160.5 gradient-bg relative sm:flex sm:flex-col">
           <div className="md:mt-25 mt-18 flex flex-col md:gap-10 gap-8">
@@ -50,7 +50,7 @@ export default function Home() {
             Everything you need to measure, model, and act on sustainability
           </h1>
           <div className="w-full md:h-125.5 h-175 flex md:justify-center md:flex-row flex-col md:px-0 px-5 md:gap-10 gap-6 md:pr-5">
-            <div className="md:w-173.25 w-83 md:h-full h-auto min-h-51 content-image"></div>
+            <div className="md:w-173.25 w-80 md:h-full h-auto min-h-51 content-image"></div>
             
             <div className="md:w-190 h-full border-t  border-gray-300">
               <FeaturesMenu
@@ -140,15 +140,15 @@ export default function Home() {
           </div>
         </div>
         {/* Blog Section */}
-        <div className="w-full md:h-142 h-133.25 flex flex-col items-center md:gap-10 gap-6 px-5 md:py-0 py-10 relative">
-          <h1 className="w-153 h-10 md:text-[40px] text-2xl text-center primary-font">
+        <div className="w-full md:h-142 h-266.75 flex flex-col items-center md:gap-10 gap-6 px-5 relative">
+          <h1 className="md:w-153 w-full h-10 md:text-[40px] text-2xl text-center primary-font">
             From the journal
           </h1>
 
           <Badge />
 
-          <div className="md:w-155 w-full h-126.5">
-            <div className="w-full h-111 border-y border-gray-300">
+          <div className="md:w-155 w-full md:h-126.5 h-254.75">
+            <div className="w-full md:h-111 h-239.25 border-y border-gray-300">
               <BlogMenu
                 image="/assets/blog.png"
                 title="How to Build a Climate-Ready Data Stack"
@@ -172,7 +172,7 @@ export default function Home() {
               />
             </div>
             <button
-              className="px-4 py-4 w-42 h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
+              className="px-4 py-4 md:w-42 w-full h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
               style={{ wordSpacing: "6px" }}
             >
               View all articles
@@ -180,21 +180,21 @@ export default function Home() {
           </div>
         </div>
         {/* Testimonial Section */}
-        <div className="w-full md:h-235 h-266.75 px-5 md:py-30 py-10 md:space-y-0 space-y-4">
-          <div className="w-full h-175 flex justify-center gap-4">
-            <div className="w-153 h-175 man-image"></div>
-            <div className="w-153 h-96 px-26.5 my-auto space-y-12">
+        <div className="w-full md:h-235 h-177.25 px-5 md:py-30 py-10 md:space-y-0 space-y-4">
+          <div className="w-full md:h-175 h-157.25 flex md:justify-center md:flex-row flex-col md:gap-4 gap-8">
+            <div className="md:w-153 w-full md:h-175 h-95.75 man-image"></div>
+            <div className="md:w-153 w-full md:h-96 h-53.5 md:px-26.5 my-auto md:space-y-12 space-y-6">
               <Image
                 src={"/icons/quote-left.svg"}
                 width={30}
                 height={30}
                 alt="quote"
               />
-              <h1 className="primary-font font-medium text-[40px] leading-[100%] tracking-[-3%] w-145 h-50">
+              <h1 className="primary-font font-medium md:text-[40px] text-2xl leading-[100%] tracking-[-3%] md:w-145 w-full md:h-50 h-24">
                 We finally moved past spreadsheets and guesswork. Now we have
                 real data to guide real decisions.
               </h1>
-              <div className="w-100.5 h-13 space-y-1 text-[20px]">
+              <div className="md:w-100.5 w-full h-13 md:space-y-1 space-y-2 text-[20px]">
                 <h1 className="primary-font">Elliot Williams</h1>
                 <h1 className="secondary-font text-gray-400">
                   Head of Sustainability, Flux Materials
@@ -204,8 +204,8 @@ export default function Home() {
           </div>
         </div>
         {/* Call to action */}
-        <div className="w-full md:h-89.5 h-51.5 px-5 md:py-30 py-10 space-y-8  bg-[#F6F8FB]">
-          <h1 className="primary-font text-center text-[40px] leading-[100%] tracking-[-3%] font-medium">
+        <div className="w-full md:h-89.5 h-51.5 px-5 md:py-30 py-10 space-y-8 bg-[#F6F8FB] md:mt-0 mt-40">
+          <h1 className="primary-font text-center md:text-[40px] text-2xl leading-[100%] tracking-[-3%] font-medium">
             Ready to operationalize your sustainability goals?
           </h1>
           <button

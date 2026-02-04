@@ -16,11 +16,11 @@ export default function BlogMenu({ image, title, insights, min, borders }: BlogP
         src={image}
         width={165}
         height={100}
-        className="w-41.25 h-25"
+        className="md:w-41.25 w-full md:h-25 h-50.75"
         alt="img"
         
       />
-      <div className="w-109.75">
+      <div className="md:w-109.75 w-full">
         <h1 className="text-[20px]">{title}</h1>
         <h1 className="text-gray-500 text-[14px] flex items-center gap-2">
           {insights ? "insights" : "Strategy"}{" "}
