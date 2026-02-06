@@ -72,6 +72,12 @@
   background-color: #fff546;
 }
 
+.journal-ticket{
+  background-image: url("/assets/ticket.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* --------------- FONTS --------------- */
 .secondary-font {
   font-family: "Source Serif 4", serif;
