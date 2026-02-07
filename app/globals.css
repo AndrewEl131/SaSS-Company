@@ -11,6 +11,11 @@
   transition: 200ms ease-in;
 }
 
+.custom-text{
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
 .default-text:hover {
   color: #333030;
 }
@@ -75,7 +80,8 @@
 .journal-ticket{
   background-image: url("/assets/ticket.png");
   background-repeat: no-repeat;
-  background-size: cover;
+
+
 }
 
 /* --------------- FONTS --------------- */
