@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function page() {
   return (
     <main className="w-full min-h-720 h-auto pt-15">
-      <div className="w-full h-140 pl-12 pr-12">
-        <img src="/assets/ticket.png" alt="" className="w-full" />
+      <div className="w-full h-140 pl-12 pr-12 flex justify-center">
+        <img src="/assets/ticket.png" alt="" className="min-w-7xl h-full" />
       </div>
-      <div className="min-h-487.5 space-y-10 px-5 pt-20 pb-10">
+      <div className="min-h-487.5 space-y-10 px-5 pt-20 pb-10 flex flex-col items-center">
         <h1 className="custom-text text-[40px] text-center">Latest articles</h1>
 
-        <div className="h-437.5 space-x-4 space-y-10 pb-30 flex flex-wrap justify-center">
+        <div className="h-437.5 space-x-4 space-y-10 pb-30 grid grid-cols-2 gap-5">
           <Journal
             title="How to Build a Climate-Ready Data Stack"
             image="/assets/blog.png"
@@ -35,21 +35,21 @@ export default function page() {
           />
           <Journal
             title="How to Build a Climate-Ready Data Stack"
-            image="/assets/blog2.png"
+            image="/assets/blog4.jpg"
             insights={true}
             min="4"
             text="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
           />
           <Journal
             title="How to Build a Climate-Ready Data Stack"
-            image="/assets/blog2.png"
+            image="/assets/blog5.jpg"
             insights={true}
             min="4"
             text="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."
           />
           <Journal
             title="How to Build a Climate-Ready Data Stack"
-            image="/assets/blog2.png"
+            image="/assets/blog6.jpg"
             insights={true}
             min="4"
             text="A practical guide for sustainability teams on integrating emissions, waste, and energy data into modern workflows."

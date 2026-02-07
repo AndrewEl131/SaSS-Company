@@ -9,9 +9,9 @@ type journalProps = {
   text: string;
 };
 
-export default function Journal({ title, insights, image, min, text }: journalProps) {
+export default function Journal({ title, insights, image, min, text}: journalProps) {
   return (
-    <div className="min-w-153 max-w-[48.5%] h-123 space-y-5">
+    <div className={`w-185 h-123 space-y-5`}>
       <img src={image} alt="" className="w-full h-90" />
       <div className="w-full h-28.5 space-y-6">
         <div className="w-full h-10.5 space-y-2">

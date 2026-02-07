@@ -9,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 md:w-full min-w-83 h-15 flex justify-between items-center px-5">
+    <header className="fixed top-0 z-50 w-full h-15 flex justify-between items-center px-5">
       <div>
         <Link href={"/"}>
           <Image src={"/assets/Logo.png"} width={120} height={90} alt="logo" />
