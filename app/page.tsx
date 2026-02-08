@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         {/* --------- Features Section --------- */}
-        <div className="w-full md:h-215.5 h-230 flex flex-col items-center md:gap-10 gap-6 md:py-30 py-10">
+        <div className="w-full md:h-215.5 h-230 flex flex-col items-center md:gap-10 gap-6 md:py-30 py-10 appear">
           <h1 className="md:w-153 h-20 md:text-[40px] text-[23px] text-center font-medium primary-font leading-10">
             Everything you need to measure, model, and act on sustainability
           </h1>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         {/* -------- Values Section -------- */}
-        <div className="w-full md:h-169.5 h-261.5 md:space-y-10 space-y-8 px-5 md:py-30 py-10 values-bg">
+        <div className="w-full md:h-169.5 h-261.5 md:space-y-10 space-y-8 px-5 md:py-30 py-10 values-bg appear">
           <div className="w-full md:h-38 h-18 flex flex-col text-center md:leading-20.5">
             <h1 className="secondary-font font-normal md:text-[80px] text-[36px]">
               Built for clarity
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </div>
         {/* --------- Case Study Section --------- */}
-        <div className="w-full h-140 flex justify-center items-center">
+        <div className="w-full h-140 flex justify-center items-center appear">
           <div className="w-245 md:h-80 h-113.5 bg-[#F6F8FB] flex md:flex-row flex-col gap-10 rounded-2xl py-5 px-5">
             <Image
               src={"/assets/CaseImage.png"}
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
         {/* Blog Section */}
-        <div className="w-full md:h-142 h-266.75 flex flex-col items-center md:gap-10 gap-6 px-5 relative">
+        <div className="w-full md:h-142 h-266.75 flex flex-col items-center md:gap-10 gap-6 px-5 relative appear">
           <h1 className="md:w-153 w-full h-10 md:text-[40px] text-2xl text-center primary-font">
             From the journal
           </h1>
@@ -180,7 +180,7 @@ export default function Home() {
           </div>
         </div>
         {/* Testimonial Section */}
-        <div className="w-full md:h-235 h-177.25 px-5 md:py-30 py-10 md:space-y-0 space-y-4">
+        <div className="w-full md:h-235 h-177.25 px-5 md:py-30 py-10 md:space-y-0 space-y-4 appear">
           <div className="w-full md:h-175 h-157.25 flex md:justify-center md:flex-row flex-col md:gap-4 gap-8">
             <div className="md:w-153 w-full md:h-175 h-95.75 man-image"></div>
             <div className="md:w-153 w-full md:h-96 h-53.5 md:px-26.5 my-auto md:space-y-12 space-y-6">
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </div>
         {/* Call to action */}
-        <div className="w-full md:h-89.5 h-51.5 px-5 md:py-30 py-10 space-y-8 bg-[#F6F8FB] md:mt-0 mt-40">
+        <div className="w-full md:h-89.5 h-51.5 px-5 md:py-30 py-10 space-y-8 bg-[#F6F8FB] md:mt-0 mt-40 appear">
           <h1 className="primary-font text-center md:text-[40px] text-2xl leading-[100%] tracking-[-3%] font-medium">
             Ready to operationalize your sustainability goals?
           </h1>
