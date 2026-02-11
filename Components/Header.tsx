@@ -18,8 +18,12 @@ export default function Header() {
 
       <ul className="md:w-105 w-full h-5 md:flex items-center gap-5 hidden">
         <li className="w-14.5 h-5 default-text">Product</li>
-        <li className="w-14.5 h-5 default-text">Journal</li>
-        <li className="w-14.5 h-5 default-text">About</li>
+        <Link href={"/journal"}>
+          <li className="w-14.5 h-5 default-text">Journal</li>
+        </Link>
+        <Link href={"/about"}>
+          <li className="w-14.5 h-5 default-text">About</li>
+        </Link>
         <li className="w-14.5 h-5 default-text">Careers</li>
         <li className="w-30 h-5 flex gap-1 default-text">
           <span>Get Started</span>
