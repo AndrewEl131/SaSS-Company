@@ -10,7 +10,7 @@ export default function Home() {
       <div className="w-full md:min-h-484 min-h-1371 h-auto flex flex-col">
         {/* --------- Intro Section --------- */}
         <div className="w-full md:h-268.5 h-160.5 gradient-bg relative sm:flex sm:flex-col">
-          <div className="md:mt-25 mt-18 flex flex-col md:gap-10 gap-8">
+          <div className="md:mt-25 mt-18 flex flex-col md:gap-10 gap-8 fade-in">
             <div>
               <h1 className="md:text-7xl text-3xl text-center flex flex-col secondary-font">
                 Sustainability insights,{" "}
@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center md:flex-row flex-col md:items-start items-center gap-5">
               <button
-                className="px-4 py-4 w-45 h-11.5 font-semibold bg-black text-white flex items-center gap-2"
+                className="px-4 py-4 w-45 h-11.5 font-semibold bg-black text-white flex items-center gap-2 button-animate"
                 style={{ wordSpacing: "6px" }}
               >
                 <div className="w-1 h-1 bg-white"></div>
@@ -33,7 +33,7 @@ export default function Home() {
               </button>
 
               <button
-                className="px-4 py-4 w-52 h-11.5 font-semibold bg-black text-white flex items-center gap-2"
+                className="px-4 py-4 w-52 h-11.5 font-semibold bg-black text-white flex items-center gap-2 button-animate"
                 style={{ wordSpacing: "6px" }}
               >
                 <div className="w-1 h-1 bg-white"></div>
@@ -41,7 +41,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="lg:w-240 lg:h-152 w-83.75 h-53 absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image"></div>
+          <div className="lg:w-240 lg:h-152 w-83.75 h-53 absolute bottom-0 left-1/2 transform -translate-x-1/2 hero-image fade-in"></div>
         </div>
 
         {/* --------- Features Section --------- */}
@@ -75,7 +75,7 @@ export default function Home() {
               />
 
               <button
-                className="px-4 py-4 md:w-45 w-full h-11.5 mt-6 font-semibold bg-black text-white flex items-center md:justify-start justify-center gap-2 secondary-font"
+                className="px-4 py-4 md:w-45 w-full h-11.5 mt-6 font-semibold bg-black text-white flex items-center md:justify-start justify-center gap-2 secondary-font button-animate"
                 style={{ wordSpacing: "6px" }}
               >
                 <div className="w-1 h-1 bg-white"></div>
@@ -97,16 +97,19 @@ export default function Home() {
               icon="/icons/Value.png"
               title="Clarity drives action"
               text="We believe better decisions start with better data—measured, visible, and trusted."
+              bg={false}
             />
             <ValueContainer
               icon="/icons/Value2.png"
               title="Sustainability is a systems problem"
               text="We build tools that help teams connect the dots between operations, impact, and accountability."
+              bg={false}
             />
             <ValueContainer
               icon="/icons/Value3.png"
               title="Progress over perfection"
               text="We support real-world momentum—helping organizations move from ambition to measurable change."
+              bg={false}
             />
           </div>
         </div>
@@ -131,7 +134,7 @@ export default function Home() {
                 </p>
               </div>
               <button
-                className="px-2 py-2 md:w-37 w-full h-9.5 mt-6 font-semibold bg-black text-white text-[14.5px] flex items-center justify-center"
+                className="px-2 py-2 md:w-37 w-full h-9.5 mt-6 font-semibold bg-black text-white text-[14.5px] flex items-center justify-center button-animate"
                 style={{ wordSpacing: "6px" }}
               >
                 <h1>Read case study</h1>
@@ -172,7 +175,7 @@ export default function Home() {
               />
             </div>
             <button
-              className="px-4 py-4 md:w-42 w-full h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2"
+              className="px-4 py-4 md:w-42 w-full h-9 mt-6 font-semibold secondary-font bg-black text-white flex items-center justify-center m-auto gap-2 button-animate"
               style={{ wordSpacing: "6px" }}
             >
               View all articles
@@ -209,7 +212,7 @@ export default function Home() {
             Ready to operationalize your sustainability goals?
           </h1>
           <button
-            className="px-4 py-4 w-41 h-11.5 mt-6 font-semibold bg-black text-white flex items-center gap-2.5 m-auto">
+            className="px-4 py-4 w-41 h-11.5 mt-6 font-semibold bg-black text-white flex items-center gap-2.5 m-auto button-animate">
             <div className="w-1 h-1 bg-white"></div>
             <h1>Request a demo</h1>
           </button>
