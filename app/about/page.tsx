@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ValueContainer from "../HomeComponents/ValueContainer";
+import { founders } from "@/FounderDummyData";
 
 export default function page() {
   return (
@@ -94,6 +95,38 @@ export default function page() {
             decade building tools that turn impact goals into real-world
             outcomes. She still insists on biking to every investor meeting.
           </p>
+        </div>
+      </div>
+      {/* Team Section */}
+      <div className="w-full h-261 flex flex-col gap-16 min-[2460px]:px-[20vmin] px-15 py-30 bg-[#F6F8FB]">
+        <h1 className="primary-font font-medium custom-font text-[56px]">
+          Meet the team
+        </h1>
+
+        <div className="w-full h-171 flex flex-col gap-2.5">
+        <div className="w-full flex flex-row items-center secondary-font text-[14px] leading-[100%] tracking-[0%] font-normal">
+          <div className="w-full flex flex-row gap-110">
+            <h1>Name</h1>
+            <h1>Title</h1>
+          </div>
+
+          <h1 className="ml-auto">Contact</h1>
+        </div>
+        {founders.map((founder) => (
+          <div className="w-full flex text-[20px] py-2 border-b border-gray-200">
+            <div className="w-120">
+              <h1 className="font-bold text-black">{founder.name}</h1>
+            </div>
+
+            <div className="flex-1">
+              <h1 className="secondary-font font-normal leading-[115%] tracking-[-4%]">{founder.title}</h1>
+            </div>
+
+            <div className="ml-auto">
+              <h1 className="text-right secondary-font underline font-normal leading-[115%] tracking-[-4%]">{founder.Contact}</h1>
+            </div>
+          </div>
+        ))}
         </div>
       </div>
     </main>
