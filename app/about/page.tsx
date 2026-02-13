@@ -129,6 +129,20 @@ export default function page() {
         ))}
         </div>
       </div>
+
+      <div className="w-full h-90 px-5 py-30 flex flex-col items-center justify-center gap-8 bg-[#F6F8FB]">
+        <h1 className="text-[40px] primary-font custom-text">
+          We’re hiring! Want to join the team?
+        </h1>
+
+        <button
+          className="px-4 py-4 w-43 h-11.5 font-semibold bg-black text-white flex items-center gap-2.5"
+          style={{ wordSpacing: "4px" }}
+        >
+          <div className="w-1 h-1 bg-white"></div>
+          <h1>View open roles</h1>
+        </button>
+      </div>
     </main>
   );
 }
